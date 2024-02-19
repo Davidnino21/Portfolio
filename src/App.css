@@ -1,0 +1,144 @@
+/* Header */
+
+
+#header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #05204a; */
+    background-color: #000004;
+    color: white;
+    padding: 50px 30px;
+}
+
+/* #header img {
+    width: 60px;
+    height: auto;
+} */
+
+#header h1 {
+    font-size: 30px;
+}
+
+#header nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+#header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.active {
+    color: #bfacaa !important;
+}
+
+/* Main */
+#main {
+    min-height: 82vh;
+    /* background-color: #bfacaa; */
+    /* background: rgb(2, 0, 36); */
+    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 98, 121, 1) 40%, rgba(0, 212, 255, 1) 100%); */
+    background: rgb(9, 15, 121);
+    background: linear-gradient(90deg, rgba(9, 15, 121, 1) 66%, rgba(2, 0, 36, 1) 100%, rgba(0, 212, 255, 1) 100%);
+    padding: 40px 30px;
+}
+
+#about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#about div {
+    width: 50%;
+    /* min-height: 50vh; */
+}
+
+#about video {
+    width: 80%;
+   
+    /* min-height: 60%; */
+}
+
+#about img {
+    width:60%;
+    height: auto;
+    opacity: 20%;
+}
+
+#about p {
+    font-size: 25px;
+    color: white;
+    
+}
+
+/* Portfolio */
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#portfolio .project {
+    width: 32%;
+    height: auto;
+    background-color: #bfacaa;
+    padding: 5px;   
+}
+
+#portfolio .project img {
+    width: 100%;
+
+}
+
+/* Contact */
+form label {
+    display: block;
+    color: white;
+}
+
+/* Footer */
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    gap: 20px;
+    background-color: #000004;
+    min-height: 100px;
+}
+
+#footer a {
+    color: white;
+}
+
+ 
+
+@media (max-width: 640px) {
+    #header {
+        row-gap: 15px;
+        padding: 0;
+        padding-top: 5px;
+    }
+
+    #header h1 {
+        width: 100%;
+        padding: 0 5px;
+    }
+
+    #header nav {
+        background-color: #02020a;
+        padding: 10px 5px;
+        width: 100%;
+    }
+
+    #header a {
+        font-size: 18px;
+    }
+}
