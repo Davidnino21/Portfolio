@@ -1,6 +1,5 @@
 /* Header */
 
-
 #header {
     display: flex;
     flex-wrap: wrap;
@@ -10,6 +9,7 @@
     background-color: #000004;
     color: white;
     padding: 50px 30px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* #header img {
@@ -40,12 +40,10 @@
 /* Main */
 #main {
     min-height: 82vh;
-    /* background-color: #bfacaa; */
-    /* background: rgb(2, 0, 36); */
-    /* background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 98, 121, 1) 40%, rgba(0, 212, 255, 1) 100%); */
     background: rgb(9, 15, 121);
     background: linear-gradient(90deg, rgba(9, 15, 121, 1) 66%, rgba(2, 0, 36, 1) 100%, rgba(0, 212, 255, 1) 100%);
     padding: 40px 30px;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #about {
@@ -61,8 +59,6 @@
 
 #about video {
     width: 80%;
-   
-    /* min-height: 60%; */
 }
 
 #about img {
@@ -74,7 +70,8 @@
 #about p {
     font-size: 25px;
     color: white;
-    
+    text-align: start;
+    font-family: 'Quicksand', sans-serif;
 }
 
 /* Portfolio */

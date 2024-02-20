@@ -11,8 +11,8 @@ function About() {
       <div>
         <img src="/aboutpic1.png" alt="" />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facilis in nam tempore quam quae eaque
-          sit nisi consequatur totam magnam omnis, quod, asperiores ab non atque perspiciatis dicta voluptas.
+          Hello there! I'm David, a passionate web designer with a keen eye for detail and a love for crafting unique digital experiences. 
+          I'm dedicated to delivering top-notch results that exceed expectations and leave a lasting impression.
         </p>
       </div>
     </div>
@@ -20,3 +20,4 @@ function About() {
 }
 
 export default About
+
