@@ -30,7 +30,7 @@ function Contact() {
     event.preventDefault()
   }
   return (
-    <div>
+    <div id='contact'>
       <form onSubmit={submit}>
         <label htmlFor="">Name:</label>
         <input type="text" name='name' onChange={handleSubmit} />
@@ -38,13 +38,13 @@ function Contact() {
         <input type="email" name='email' onChange={handleSubmit} />
         <label htmlFor="">Message:</label>
         <textarea name="message" id="" cols="30" rows="10" onChange={handleSubmit}></textarea>
-        <button type="submit">Submit</button>
-      </form>
       {
         error && (
           <p>{error}</p>
         )
       }
+        <button type="submit">Submit</button>
+      </form>
     </div>
   )
 }

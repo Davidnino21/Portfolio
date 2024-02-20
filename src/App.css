@@ -85,22 +85,131 @@
     gap: 15px;
 }
 
+
 #portfolio .project {
     width: 32%;
     height: auto;
     background-color: #bfacaa;
     padding: 5px;   
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
 }
 
 #portfolio .project img {
     width: 100%;
-
+    flex-grow: 2;
 }
 
+.project div {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.project div a {
+    width: 50%;
+    background-color: #f1f1f1;
+    padding: 5px;
+    text-align: center;
+}
+
+.project div a:hover {
+    /* opacity: .7; */
+    background-color: black;
+    color: white;
+}
+
+.project div a:first-child {
+    border-bottom-left-radius: 5px;
+}
+
+.project div a:last-child{
+    border-bottom-right-radius: 5px;
+}
+
+.project h4 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5px;
+}
 /* Contact */
+#contact {
+    max-width: 500px;
+}
+
 form label {
     display: block;
     color: white;
+    width: 100%;
+    font-size: 20px;
+}
+
+form input, textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#contact p {
+    color: white;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+#contact button {
+    font-size: 18px;
+    padding: 5px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+#contact button:hover {
+     background-color: #bfacaa;
+}
+
+/* Resume */
+#resume {
+    color: white;
+    padding: 15px;
+}
+
+#resume h2 {
+    font-size: 28px;
+}
+
+#resume p{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+#resume a {
+    color: white;
+}
+
+#resume div {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#resume ul {
+    margin-bottom: 10px;
+    padding: 5px;
+    margin-left: 20px;
+    list-style: disc;
+}
+
+#resume li {
+    line-height: 2;
+}
+
+#resume h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -119,6 +228,17 @@ form label {
 }
 
  
+
+@media (max-width: 810px) {
+    #portfolio {
+        gap: 0;
+        row-gap: 15px;
+        justify-content: space-between;
+    }
+    #portfolio .project {
+        width: 49%;
+    }
+}
 
 @media (max-width: 640px) {
     #header {
@@ -140,5 +260,8 @@ form label {
 
     #header a {
         font-size: 18px;
+    }
+    #portfolio .project {
+        width: 100%;
     }
 }
